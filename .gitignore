@@ -1,0 +1,18 @@
+# Directories
+target/
+logs/
+*.settings/
+
+# Files
+*.pyc
+*.classpath
+*.project
+*.pydevproject
+.DS_Store
+*.swp
+*.log
+
+# intellij
+.idea/
+*.iml
+*.iws

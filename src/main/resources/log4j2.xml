@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="MyApp" packages="com.walmart.labs.pcs.normalize">
+    <Properties>
+        <Property name="logLevel">info</Property>
+    </Properties>
+    <Appenders>
+        <File name="MyFile" fileName="${sys:catalina.home}/logs/SparkStormKafkaTest.log" append="true">
+            <PatternLayout pattern="%d{dd MMM yyyy HH:mm:ss,SSS} [ReqId : %X{requestId}] [%thread] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <Async name="Async">
+            <AppenderRef ref="MyFile"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Root level="${sys:logLevel}">
+            <AppenderRef ref="Async"/>
+        </Root>
+    </Loggers>
+</Configuration>
