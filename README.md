@@ -24,4 +24,5 @@ mvn clean install
 java -cp target/uber-SparkStormKafkaTest-0.0.1-SNAPSHOT.jar com.walmart.labs.pcs.normalize.KafkaSpoutTestTopology zookeeperhosts(including port)
 
 cluster:
+mvn clean package -P cluster
 ./storm jar uber-SparkStormKafkaTest-0.0.1-SNAPSHOT.jar com.walmart.labs.pcs.normalize.KafkaSpoutTestTopology zookeeperhosts(including port)
