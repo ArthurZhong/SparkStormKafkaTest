@@ -363,6 +363,15 @@
 			<version>2.6.0</version>
 		</dependency>
 
+		<!-- Elastic client dependency -->
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+
+
+
 
 	</dependencies>
 
