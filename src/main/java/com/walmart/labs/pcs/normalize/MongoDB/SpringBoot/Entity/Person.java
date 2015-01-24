@@ -1,4 +1,4 @@
-package com.walmart.labs.pcs.normalize.MongoDB.SpringBoot;
+package com.walmart.labs.pcs.normalize.MongoDB.SpringBoot.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

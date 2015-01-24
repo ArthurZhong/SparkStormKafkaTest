@@ -1,17 +1,17 @@
-package com.walmart.labs.pcs.normalize.MongoDB.SpringBoot;
+package com.walmart.labs.pcs.normalize.MongoDB.SpringBoot.repository;
 
-import java.util.Iterator;
 import java.util.List;
+
+import com.walmart.labs.pcs.normalize.MongoDB.SpringBoot.entity.Person;
 import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.stereotype.Repository;
 
 /**
  * Created by pzhong1 on 1/23/15.
  */
-public class PersonRepository {
-    static final Logger logger = LoggerFactory.getLogger(PersonRepository.class);
+public class PersonRepositoryImp {
+    static final Logger logger = LoggerFactory.getLogger(PersonRepositoryImp.class);
     @Autowired MongoTemplate mongoTemplate;
     public List<Person> getAllPersons() {
         List<Person> results = mongoTemplate.findAll(Person.class);

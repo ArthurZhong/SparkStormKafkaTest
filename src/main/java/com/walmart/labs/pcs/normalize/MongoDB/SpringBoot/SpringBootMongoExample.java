@@ -1,5 +1,8 @@
 package com.walmart.labs.pcs.normalize.MongoDB.SpringBoot;
 
+import com.walmart.labs.pcs.normalize.MongoDB.SpringBoot.entity.Person;
+import com.walmart.labs.pcs.normalize.MongoDB.SpringBoot.service.PersonService;
+
 /**
  * Created by pzhong1 on 1/23/15.
  */
