@@ -4,7 +4,7 @@
         <Property name="logLevel">info</Property>
     </Properties>
     <Appenders>
-        <File name="MyFile" fileName="${sys:catalina.home}/logs/SparkStormKafkaTest.log" append="true">
+        <File name="MyFile" fileName="/log/SparkStormKafkaTest.log" append="true">
             <PatternLayout pattern="%d{dd MMM yyyy HH:mm:ss,SSS} [ReqId : %X{requestId}] [%thread] %-5level %logger{36} - %msg%n"/>
         </File>
         <Async name="Async">
