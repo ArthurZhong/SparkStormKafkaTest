@@ -66,7 +66,6 @@ public class PeopleTest {
             // Add it to logger
             Logger log = Logger.getLogger(AopExample.class);// ExceptionHandler is the class that contains this code : `log.warn("An error has occured:", e);'
             log.addAppender(wa);
-
             try {
                 // Call to the method that will print text to STDOUT...
                 PeopleService peopleService = new PeopleService();

@@ -10,6 +10,7 @@ import org.springframework.data.domain.PageRequest;
 public interface CustomerService{
     Customer save(Customer post);
     Customer findOne(String id);
+    Customer findOneWithTimeThrottlingAndRetry(String id);
     Iterable<Customer> findAll();
     public Page<Customer> findByCustomerName(String customerName, PageRequest pageRequest);
 }

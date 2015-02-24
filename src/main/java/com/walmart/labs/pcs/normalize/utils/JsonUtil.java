@@ -165,4 +165,13 @@ public class JsonUtil {
         File resOutputFile = new File(dir + "/" + fileName);
         JsonUtil.writeOjectToFile(obj, resOutputFile);
     }
+
+    /**
+     * @param jsonString
+     * @param classType
+     * @return
+     */
+    public static <T> T convertToObject(String jsonString, Class<T> classType) throws IOException {
+        return objectMapper.readValue(jsonString, classType);
+    }
 }
