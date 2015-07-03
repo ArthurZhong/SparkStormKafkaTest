@@ -64,7 +64,7 @@ public class CustomerServiceImp implements CustomerService {
                 return JsonUtil.convertToObject(source, Customer.class);
             } catch (Exception logged) {
                 if (retried == retryCnt) {
-                    logger.warn("Failed to get extracted attributes for item " + id, logged);
+                    logger.warn("Failed to get customer information for customer " + id, logged);
                 } else {
                     try {
                         Thread.sleep(retryThrottleInMillis);
